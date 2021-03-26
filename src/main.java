@@ -32,8 +32,8 @@ public class main{
     }
 
     static void Calculadora(Scanner scan){
-        System.out.println("Bienvenido a la calculadora!");
-        System.out.println("Para multiplicacion presione 1, \n Para suma presione 2, \n Para resta presione 3, \n Para" +
+        System.out.println("\nBienvenido a la calculadora!");
+        System.out.println("\nPara multiplicacion presione 1, \n Para suma presione 2, \n Para resta presione 3, \n Para" +
                 " division presione 4, \n Para raiz cuadrada presione 5");
         System.out.println("Introduzca su numero: ");
         int num = scan.nextInt();
