@@ -4,6 +4,32 @@ import java.util.Stack;
 public class main{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
+        PruebasUnitarias();
+
+        Calculadora(scan);
+    }
+
+    static void PruebasUnitarias(){
+        System.out.println("Vamos a hacer primero unas pruebas unitarias.");
+        System.out.println("Primero, probamos una multiplicación.");
+        System.out.println("Multiplcaremos 6 veces 6, esto debe dar 36, veamos.");
+        System.out.println();
+        System.out.println("6 * 6 = " + String.valueOf(Operaciones.getInstance().Mult(6,6)));
+
+        System.out.println("Ok, correcto.");
+        System.out.println();
+
+        System.out.println("Veamos con una raíz.");
+        System.out.println("Raíz de 25 es 5, probemos");
+        System.out.println();
+        System.out.println("Raíz de 25 = " + String.valueOf(Operaciones.getInstance().SQRT(25)));
+        System.out.println("Ok, correcto.");
+        System.out.println("Todo bien.");
+        System.out.println();
+    }
+
+    static void Calculadora(Scanner scan){
         System.out.println("Bienvenido a la calculadora!");
         System.out.println("Para multiplicacion presione 1, \n Para suma presione 2, \n Para resta presione 3, \n Para" +
                 " division presione 4, \n Para raiz cuadrada presione 5");
@@ -31,6 +57,5 @@ public class main{
             double num2 = scan.nextDouble();
             System.out.println("La raiz es: "+ String.valueOf(Operaciones.getInstance().SQRT(num2)));
         }
-
     }
 }
